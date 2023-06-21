@@ -29,7 +29,7 @@ class NewArticle {
 
 Future<List<NewArticle>> fetchNewsArticles() async {
   final response = await http.get(Uri.parse(
-      'https://newsapi.org/v2/top-headlines?country=us&category=business&apiKey=639c11b70a5e408bad88ee08fec1e791'));
+      'https://newsapi.org/v2/top-headlines?country=us&category=business&apiKey=YOURAPI'));
 
   if (response.statusCode == 200) {
     final jsonBody = jsonDecode(response.body);
